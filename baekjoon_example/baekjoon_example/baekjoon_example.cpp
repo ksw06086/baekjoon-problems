@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-	
+	// 지금 수정이 되고 있는 것일까?
 }
 #endif // 프로그래밍 기본 툴
 
