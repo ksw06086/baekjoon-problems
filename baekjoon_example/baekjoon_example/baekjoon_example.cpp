@@ -18,19 +18,6 @@ int main()
 }
 #endif // 프로그래밍 기본 툴
 
-#ifdef BASE
-#include <iostream>
-#include <algorithm>
-#include <string>
-#include <vector>
-using namespace std;
-
-int main()
-{
-
-}
-#endif // 프로그래밍 기본 툴
-
 #ifdef BRIDGE
 #include <iostream>
 #include <algorithm>
