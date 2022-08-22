@@ -3,7 +3,7 @@
 // #define BACKJOON_EXAM
 // #define REFERENCE_EXAM
 // #define BRIDGE
-
+// #define CHAR_STUDY
 
 #ifdef BASE
 #include <iostream>
@@ -14,10 +14,55 @@ using namespace std;
 
 int main()
 {
-	// 지금 수정이 되고 있는 것일까?
+	
 }
 #endif // 프로그래밍 기본 툴
 
+#ifdef BASE
+#include <iostream>
+#include <algorithm>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main()
+{
+
+}
+#endif // 프로그래밍 기본 툴
+#ifdef CHAR_STUDY
+#include <iostream>
+#include <algorithm>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	string str;
+	int sub_result = 0;
+	int fin_result = 0;
+	int i;
+	int alphabet[26] = { 0, };
+	cin >> str;
+
+	for (char a : str) {
+		i = (a <= 'Z') ? a - 65 : a - 97;
+		alphabet[i]++;
+		if (alphabet[i] >= alphabet[fin_result]) {
+			sub_result = fin_result;
+			fin_result = i;
+		}
+	}
+
+	if (alphabet[sub_result] == alphabet[fin_result] && sub_result != fin_result) {
+		cout << '?';
+	}
+	else {
+		cout << (char)(fin_result + 65);
+	}
+}
+#endif // 단어공부
 #ifdef BRIDGE
 #include <iostream>
 #include <algorithm>
